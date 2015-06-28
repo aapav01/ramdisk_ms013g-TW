@@ -1,0 +1,6 @@
+# Turbo Extras
+
+service turbo-sh /system/bin/sh /init.turbo.sh
+	class late_start
+	user root
+	oneshot

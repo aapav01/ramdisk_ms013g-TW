@@ -301,6 +301,9 @@ service usbhub_init /system/bin/usbhub_init
    disabled
    oneshot
 
+   #Import Turbo Extra
+   import init.turbo.rc
+
 on property:persist.radio.atfwd.start=false
     stop atfwd
 
