@@ -301,9 +301,6 @@ service usbhub_init /system/bin/usbhub_init
    disabled
    oneshot
 
-#Import furnace extras
-    import init.furnace.rc
-
 on property:persist.radio.atfwd.start=false
     stop atfwd
 
